@@ -1,4 +1,5 @@
 "use client";
+
 import { signIn, useSession , signOut} from "next-auth/react"
 export function Appbar(){
     const session = useSession();

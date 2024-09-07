@@ -14,10 +14,17 @@ datasource db {
 }
 
 model User{
-  id    String    @id @default(uudi())
-  email  String
-  provider Provider
+  id          String      @id @default(uuid())
+  email       String
+  provider    Provider
+
 } 
+model Stream{
+  userId   String  
+  
+}
+
+
 enum Provider{
   Google
 }
